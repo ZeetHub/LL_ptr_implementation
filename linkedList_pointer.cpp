@@ -267,13 +267,12 @@ void copy(linkedList<T> srcList, linkedList<T> &destList)
 template <class T>
 void displayList(linkedList<T> list)
 {
-    cout<<setw(10)<<"ADDRESS"<<setw(5)<<setfill(' ')<<setw(10)<<"DATA"<<setfill(' ')<<setw(10)<<right<<"NEXT"<<endl;
+    cout<<setw(10)<<"ADDRESS"<<setfill(' ')<<setw(10)<<"DATA"<<setfill(' ')<<setw(10)<<"NEXT"<<endl;
     cout<<setfill('-')<<setw(25)<<'-'<<setfill(' ')<<endl;
-    while(list.head != NIL)
+    while(list.head != nullptr)
     {
-        cout<<setw(5)<<list.head<<setfill(' ')<<setw(10)<<right<<list.array->base[list.head].data<<setfill(' ')<<setw(10)<<list.array->base[list.head].next<<setfill(' ')<<endl;
-        // cout<<list.array->base[list.head].next<<endl;
-        list.head = list.array->base[list.head].next;
+        cout<<setw(5)<<list.head<<setfill(' ')<<setw(10)<<right<<list.head->data<<setfill(' ')<<setw(10)<<list.head->next<<setfill(' ')<<endl;
+        list.head = list.head->next;
     }
     system("pause");
     system("cls");
