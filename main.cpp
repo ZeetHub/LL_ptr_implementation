@@ -58,7 +58,7 @@ int main()
                 break;
             case ADD_RANGE_OF_FLOAT:
             {
-                cout<< "NOTE(This is for demonistration purpose only.):\n\nBecause we don't have a list to be to be inserted in the another list:\n1. Create a new linked list\n2. Insert numbers in the new linked list as much as you want\n3. Now insert the new linked list in the other linked list after the position you specify.\n\nPopulate the new list with numbers using the keyboard when requested.\n\nEnter -1 when you are done.\n\n";
+                cout<< "NOTE(This is for demonistration purpose only.)\nCreate a linked list and populate it with numbers.\n";
                 system("pause");
                 system("cls");
 
